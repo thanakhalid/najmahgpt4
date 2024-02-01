@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Generator</title>
+    <!-- Add any CSS or JS links here -->
+</head>
+<body>
+    <h1>Generate a Quiz</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="text" placeholder="Enter text to generate quiz"></textarea>
+        <button type="submit">Generate Quiz</button>
+    </form>
+</body>
+</html>
